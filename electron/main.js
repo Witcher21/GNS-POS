@@ -168,10 +168,12 @@ ipcMain.handle('print-receipt', async (_, invoiceData) => {
 })
 
 // ─── SMS via Notify.lk ───────────────────────────────────
+const DEFAULT_SMS_CFG = { userId: '31066', apiKey: 'GUPiUO2alhI6z1xljfPR', senderId: 'NotifyDEMO' }
+
 ipcMain.handle('send-sms', async (_, { phone, message }) => {
   const settingsPath = path.join(app.getPath('userData'), 'sms-settings.json')
-  let cfg = {}
-  try { cfg = JSON.parse(fs.readFileSync(settingsPath, 'utf8')) } catch {}
+  let cfg = { ...DEFAULT_SMS_CFG }
+  try { Object.assign(cfg, JSON.parse(fs.readFileSync(settingsPath, 'utf8'))) } catch {}
 
   const { userId, apiKey, senderId } = cfg
   if (!userId || !apiKey) {
