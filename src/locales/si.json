@@ -1,0 +1,77 @@
+{
+  "app": { "name": "GNS POS", "tagline": "ව්‍යාපාරික විකිණීම් ක්‍රමය" },
+  "nav": {
+    "cashier": "කාශියර්", "inventory": "ගබඩාව", "import": "CSV ආනයනය",
+    "invoices": "ඉන්වොයිස්", "zreport": "Z-වාර්තාව", "settings": "සැකසුම්"
+  },
+  "cashier": {
+    "title": "කාශියර් ස්ථානය", "searchPlaceholder": "භාණ්ඩය සොයන්න (නම හෝ බාර්කෝඩ්)...",
+    "cart": "ගෙවීම් ලැයිස්තුව", "emptyCart": "ලැයිස්තුව හිස් ය — භාණ්ඩයක් සොයන්න",
+    "product": "භාණ්ඩය", "qty": "ප්‍රමාණය", "price": "ඒකක මිල", "total": "මුළු මුදල",
+    "subtotal": "උප මුළු", "grandTotal": "මුළු ගෙවිය යුතු",
+    "checkout": "ගෙවීම", "clearCart": "ලැයිස්තුව ඉවත් කරන්න",
+    "stockAlert": "ප්‍රමාණවත් තොගයක් නොමැත!", "barcode": "බාර්කෝඩ්",
+    "addedToCart": "ලැයිස්තුවට එකතු කළා", "notFound": "භාණ්ඩය හමු නොවිණ",
+    "stock": "තොගය"
+  },
+  "checkout": {
+    "title": "ගෙවීම", "orderSummary": "ඇණවුම් සාරාංශය",
+    "paymentMethod": "ගෙවීම් ක්‍රමය", "cash": "මුදල්", "card": "කාඩ්",
+    "cashAmount": "මුදල් ප්‍රමාණය (රු.)", "cardAmount": "කාඩ් ප්‍රමාණය (රු.)",
+    "change": "ඉතිරිය", "customerPhone": "පාරිභෝගිකයාගේ දුරකථන අංකය",
+    "phonePlaceholder": "උදා: 0771234567", "sendSms": "SMS රිසිට් යවන්න",
+    "confirm": "ගෙවීම තහවුරු කරන්න", "cancel": "අවලංගු කරන්න", "total": "ගෙවිය යුතු මුළු",
+    "insufficientCash": "ලබා දුන් මුදල ප්‍රමාණවත් නොවේ",
+    "success": "ඉන්වොයිස් #{id} සුරකින ලදී! PDF රිසිට් සෑදිණ.",
+    "smsSent": "{phone} වෙත SMS යවන ලදී"
+  },
+  "inventory": {
+    "title": "ගබඩා කළමනාකරණය", "addProduct": "භාණ්ඩයක් එකතු කරන්න",
+    "search": "භාණ්ඩ සොයන්න...", "barcode": "බාර්කෝඩ්",
+    "nameEn": "නම (ඉංග්‍රීසි)", "nameSi": "නම (සිංහල)", "costPrice": "පිරිවැය",
+    "sellingPrice": "විකිණීම් මිල", "stock": "තොගය", "actions": "ක්‍රියා",
+    "edit": "සංස්කරණය", "delete": "මකන්න", "noProducts": "භාණ්ඩ නොමැත",
+    "totalProducts": "මුළු: {count} භාණ්ඩ", "lowStock": "අඩු තොගය"
+  },
+  "productForm": {
+    "addTitle": "නව භාණ්ඩයක් එකතු කරන්න", "editTitle": "භාණ්ඩය සංස්කරණය කරන්න",
+    "save": "භාණ්ඩය සුරකින්න", "cancel": "අවලංගු කරන්න",
+    "barcodeHint": "හිස් කරන්නේ නම් මග හැරේ", "required": "අවශ්‍ය"
+  },
+  "import": {
+    "title": "CSV ගොනු ආනයනය",
+    "dropZone": "CSV ගොනුව මෙහි ඇදගෙන එන්න, නැතහොත් ක්ලික් කරන්න",
+    "format": "අවශ්‍ය තීරු: barcode, name_en, name_si, cost_price, selling_price, stock",
+    "browse": "ගොනුව තෝරන්න", "preview": "පෙරදසුන (පළමු පේළි 10)",
+    "importBtn": "භාණ්ඩ {count}ක් ආනයනය කරන්න", "importing": "ආනයනය වෙමින්...",
+    "success": "භාණ්ඩ {count}ක් සාර්ථකව ආනයනය කළා!",
+    "error": "ආනයනය අසාර්ථකයි: {msg}", "downloadSample": "නිදර්ශන CSV බාගන්න",
+    "noFile": "ගොනුවක් තෝරා නොමැත"
+  },
+  "invoices": {
+    "title": "ඉන්වොයිස් ඉතිහාසය", "id": "ඉන්වොයිස් #", "date": "දිනය",
+    "total": "මුළු", "items": "භාණ්ඩ", "phone": "දුරකථනය",
+    "view": "බලන්න", "pdf": "PDF මුද්‍රණය", "noInvoices": "ඉන්වොයිස් නොමැත",
+    "detail": "ඉන්වොයිස් විස්තර", "payMethod": "ගෙවීම"
+  },
+  "zreport": {
+    "title": "Z-වාර්තාව (දිනෙ සාරාංශය)", "selectDate": "දිනය",
+    "generate": "වාර්තාව ජනනය කරන්න", "totalSales": "මුළු විකිණීම්",
+    "invoiceCount": "ඉන්වොයිස්", "totalCash": "මුදල්", "totalCard": "කාඩ්",
+    "topProducts": "ඉහළ භාණ්ඩ 10", "hourlySales": "පැය ලෙස ව්‍යාප්තිය",
+    "noData": "මෙම දිනය සඳහා විකිණීම් දත්ත නොමැත",
+    "product": "භාණ්ඩය", "qtySold": "විකිණූ ප්‍රමාණය", "revenue": "ආදායම",
+    "hour": "වේලාව", "count": "ඉන්වොයිස්"
+  },
+  "settings": {
+    "title": "සැකසුම්", "storeName": "ගබඩා නම", "defaultLang": "පෙරනිමි භාෂාව",
+    "sinhala": "සිංහල", "english": "ඉංග්‍රීසි (English)",
+    "save": "සැකසුම් සුරකින්න", "saved": "සැකසුම් සාර්ථකව සුරකිණ!"
+  },
+  "common": {
+    "yes": "ඔව්", "no": "නන්", "confirm": "තහවුරු කරන්න", "cancel": "අවලංගු කරන්න",
+    "close": "වසන්න", "loading": "පූරණය වෙමින්...", "success": "සාර්ථකයි", "error": "දෝෂයකි",
+    "deleteConfirm": "ඔබට මෙම අයිතමය මැකීමට අවශ්‍ය ද? මෙය අහෝසි කළ නොහැක.",
+    "rs": "රු.", "noData": "දත්ත නොමැත"
+  }
+}
